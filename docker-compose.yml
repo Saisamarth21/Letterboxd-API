@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+  letterboxd-api:
+    image: saisamarth21/letterboxd-api:latest
+    ports:
+      - "6996:6996"
+    restart: unless-stopped
