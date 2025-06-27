@@ -33,8 +33,8 @@ def get_user(username: str):
         return cached(
             key=f"lb:user:{username}",
             ttl=300,  # cache for 5 minutes
-            # User is dict-like, so wrap in dict()
-            fetch_fn=lambda: dict(lb_user.User(username))
+            # vars() will grab the User object's __dict__ and return a plain dict
+            fetch_fn=lambda: vars(lb_user.User(username))
         )
     except Exception as e:
         raise HTTPException(status_code=404, detail=f"Could not fetch user: {e}")
