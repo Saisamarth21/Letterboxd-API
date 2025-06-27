@@ -1,6 +1,8 @@
+# requirements.txt
 fastapi
 uvicorn[standard]
 letterboxdpy
 requests
 beautifulsoup4
 lxml
+redis>=4.5.0
