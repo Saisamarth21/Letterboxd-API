@@ -1,8 +1,8 @@
-# docker-compose.yml
 version: "3.8"
 
 services:
   redis:
+    container_name: redis
     image: redis:7-alpine
     command: ["redis-server", "--save", "", "--appendonly", "no"]
     ports:
@@ -10,8 +10,8 @@ services:
     restart: unless-stopped
 
   letterboxd-api:
-    build: .
-    image: saisamarth21/letterboxd-api:latest
+    container_name: letterboxd-api
+    image: saisamarth21/letterboxd-api:redis1.3
     ports:
       - "6996:6996"
     environment:
