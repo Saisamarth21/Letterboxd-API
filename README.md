@@ -156,7 +156,7 @@ An in-memory key–value store with built-in TTL eviction—perfect for caching 
 | Change                                                 | Before        | After        | 
 | ------------------------------------------------------ | ------------- | ------------ |
 | Response time reduced from **10.07 s** to **73.47 ms** **->** **99.27% incerase**  | ![before1](screenshots/before2.png) |![after1](screenshots/after2.png) |
-| Response time reduced from **3.92 s** to **33.55 ms** **->** **99.% incerase** | ![before2](screenshots/before1.png) | ![after2](screenshots/after1.png) |
+| Response time reduced from **3.92 s** to **33.55 ms** **->** **99.14% incerase** | ![before2](screenshots/before1.png) | ![after2](screenshots/after1.png) |
 
 
 ## ⚙️ Quickstart
