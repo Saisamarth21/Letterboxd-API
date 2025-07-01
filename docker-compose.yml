@@ -11,7 +11,7 @@ services:
 
   letterboxd-api:
     container_name: letterboxd-api
-    image: saisamarth21/letterboxd-api:redis1.3
+    image: saisamarth21/letterboxd-api
     ports:
       - "6996:6996"
     environment:
